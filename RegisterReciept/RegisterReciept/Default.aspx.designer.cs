@@ -40,6 +40,24 @@ namespace RegisterReciept {
         protected global::System.Web.UI.WebControls.TextBox input;
         
         /// <summary>
+        /// required control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator required;
+        
+        /// <summary>
+        /// compare control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator compare;
+        
+        /// <summary>
         /// submit control.
         /// </summary>
         /// <remarks>
