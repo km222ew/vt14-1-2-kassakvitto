@@ -18,7 +18,18 @@ namespace RegisterReciept
         {
             if (IsValid)
             {
-                
+                double userInput = Double.Parse(input.Text);
+
+                Model.Receipt receiptCalc = new Model.Receipt(userInput);
+
+                //Sätter texten på alla labels
+                total.Text = String.Format("{0:c}", receiptCalc.Subtotal);
+                discountRate.Text = String.Format("{0:p0}", receiptCalc.DiscountRate);
+                discount.Text = String.Format("{0:c}", receiptCalc.MoneyOff);
+                toPay.Text = String.Format("{0:c}", receiptCalc.Total);
+
+                //Visar kvittot
+                receipt.Visible = true;
             }
         }
     }
