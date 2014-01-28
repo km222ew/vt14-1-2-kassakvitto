@@ -13,10 +13,5 @@ namespace RegisterReciept
         {
 
         }
-
-        protected void Submit_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

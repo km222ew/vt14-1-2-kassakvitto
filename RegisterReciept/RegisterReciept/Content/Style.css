@@ -66,5 +66,29 @@ h1 {
 .info {
 
     margin-left:10px;
+}
+#receipt {
 
+    border: solid black 1px;
+    width: 250px;
+    margin:0 auto;
+    margin-top:25px;
+    background-color:white;
+
+}
+.textalign {
+
+    text-align:center;
+}
+#receiptNumbers {
+
+    border-top:dotted 2px black;
+    border-bottom:dotted 2px black;
+    display:block;
+    margin:10px;
+    
+}
+.floatright {
+
+    float:right;
 }
