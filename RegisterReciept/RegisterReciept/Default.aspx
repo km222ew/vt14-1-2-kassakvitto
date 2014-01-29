@@ -6,28 +6,20 @@
 <head runat="server">
     <title>Kassakvitto</title>
     <link href="~/Content/Style.css" rel="stylesheet" type="text/css" />
-    <script>
-        function focus() {
-            
-            var input = document.getElementById("input");
-            input.focus();
-            input.select();
-
-        }
-</script>
+    
 </head>
-<body onload="focus()">
+<body>
 
     <h1>Kassakvitto</h1>
 
     <div id="container">
 
-        <form id="form" runat="server" defaultbutton="submit">
+        <form id="form" runat="server" defaultbutton="submit" defaultfocus="input">
 
             <div>
 
                 <asp:Label ID="info" runat="server" Text="Total köpesumma:" CssClass="info"></asp:Label>
-                <asp:TextBox ID="input" runat="server" CssClass="input"></asp:TextBox>
+                <asp:TextBox ID="input" runat="server" CssClass="input" autofocus="autofocus"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="required" runat="server" ErrorMessage="Ange en total köpesumma." ControlToValidate="input" Display="Dynamic" CssClass="error"></asp:RequiredFieldValidator>
                 <asp:CompareValidator ID="compare" runat="server" ErrorMessage="Ange en total köpesumma större än 0." Display="Dynamic" ControlToValidate="input" Operator="GreaterThan" Type="Double" ValueToCompare="0" CssClass="error"></asp:CompareValidator>
 
